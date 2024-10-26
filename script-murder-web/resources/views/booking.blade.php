@@ -24,6 +24,7 @@
                                     <p>Location: {{ $scriptItem->location }}</p>
                                     <p>Date: {{ \Carbon\Carbon::parse($scriptItem->event_date)->format('M d, Y') }}</p>
                                     <p>Price: £{{ number_format($scriptItem->price, 2) }}</p>
+                                    <p>Description: {{ $scriptItem->description }}</p>
                                 </div>
                             </a>
                         </div>
