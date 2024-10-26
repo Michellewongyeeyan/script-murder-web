@@ -15,7 +15,7 @@
 
 		<!-- Link to the style.css -->
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	</head>
+</head>
 	
 	<body>
 		
@@ -30,10 +30,10 @@
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				    <ul class="navbar-nav mr-auto">
 				      <li class="nav-item">
-				        <a class="nav-link" href="index.html">Home</a>
+				        <a class="nav-link" href="{{ route('home') }}">Home</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="all.html">Booking Session</a>
+				        <a class="nav-link" href="{{ route('booking') }}">Booking Session</a>
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link" href="faq.html">Blog</a>
