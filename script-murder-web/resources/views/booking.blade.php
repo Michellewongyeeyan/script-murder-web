@@ -10,6 +10,8 @@
                 <h1>Book Your Murder Script Session</h1>
                 <p>Select from our thrilling range of scripts and book your session today!</p>
                 
+                <p><strong>{{ $scriptItemCount }} script(s) found</strong></p>
+
                 <!-- Display each script item dynamically -->
                 <div class="row">
                     @foreach($scriptItems as $scriptItem)
