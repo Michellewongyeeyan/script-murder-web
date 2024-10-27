@@ -9,7 +9,7 @@
                 <h4>Link</h4>
                 <ul>
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="#">Booking Session</a></li>
+                    <li><a href="{{ route('booking') }}">Booking Session</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>

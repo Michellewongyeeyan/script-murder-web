@@ -21,8 +21,8 @@
                                 <img src="{{ asset('pictures/' . $scriptItem->picture) }}" alt="{{ $scriptItem->scriptname }}">
                                 <div class="details">
                                     <h3>{{ $scriptItem->scriptname }}</h3>
-                                    <p>Location: {{ $scriptItem->location }}</p>
-                                    <p>Date: {{ \Carbon\Carbon::parse($scriptItem->event_date)->format('M d, Y') }}</p>
+                                    <p class="fas fa-map-marker-alt">Location: {{ $scriptItem->location }}</p>
+                                    <p class="far fa-clock"> Date: {{ \Carbon\Carbon::parse($scriptItem->event_date)->format('M d, Y') }}</p>
                                     <p>Price: £{{ number_format($scriptItem->price, 2) }}</p>
                                     <p>Description: {{ $scriptItem->description }}</p>
                                 </div>

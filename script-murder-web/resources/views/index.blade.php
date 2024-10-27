@@ -22,7 +22,7 @@
         <header>
 	        <div class='container'>
 				<nav class="navbar navbar-expand-lg navbar-light">
-				  <a class="navbar-brand" href="index.html"><img src='pictures/brandlogo.png' width='155'></a>
+				  <a class="navbar-brand" href="{{ route('home') }}"><img src='pictures/brandlogo.png' width='155'></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
@@ -151,7 +151,7 @@
 					  	<div class='row'>
 						  	<div class='col-md-4 text-left'>
 							  	<div class='outer'>
-								  	<a href='pictures/Shattered_.png'>
+								  	<a href="{{ route('booking') }}">
 										<div class='upper'>
 											<img src='pictures/Shattered_.png'>
 											<div class='innertext'>
@@ -171,7 +171,7 @@
 						  	</div>
 						  	<div class='col-md-4 text-left'>
 							  	<div class='outer'>
-								  	<a href='pictures/breakingtheveil.png'>
+								  	<a href="{{ route('booking') }}">
 										<div class='upper'>
 											<img src='pictures/breakingtheveil.png'>
 											<div class='innertext'>
@@ -191,7 +191,7 @@
 						  	</div>
 						  	<div class='col-md-4 text-left'>
 							  	<div class='outer'>
-								  	<a href='pictures/undernvestigation.png'>
+								    <a href="{{ route('booking') }}">
 									  	<div class='upper'>
 											<img src='pictures/undernvestigation.png'>
 											<div class='innertext'>
@@ -239,14 +239,14 @@
 	        <div class="container">
 		        <div class='row'>
 					  <div class='col-md-4 text-left'>
-						  <img src='pictures/brandlogo.png' width='85'>
+						  <img src='pictures/brandlogo.png' width='90'> 
 						  <p>Murdy. Party hosts the most exciting Script Murder parties. Feeling bored? Join us and have some fun together!</p>
 					  </div>
 					  <div class='col-md-4 text-left'>
 						  <h4>Link</h4>
 						  <ul>
-					      	<li><a href='index.html'>Home</a></li>
-					      	<li><a href='all.html'>Booking Session</a></li>
+					      	<li><a href="{{ route('home') }}">Home</a></li>
+					      	<li><a href="{{ route('booking') }}">Booking Session</a></li>
 						  </ul>
 						  <ul>
 					      	<li><a href='faq.html'>Blog</a></li>

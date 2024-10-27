@@ -169,9 +169,7 @@ p.lead{
 	color:black;
 	text-decoration: none;
 }
-#latest i{
-	margin-right:5px;
-}
+
 
 /* the countdown timer */
 /* Styles for the countdown timer */
@@ -271,6 +269,7 @@ p.lead{
 footer{
 	padding: 80px 0px
 }
+
 #email p{
 	margin-top: 40px;
 }
@@ -447,7 +446,7 @@ footer ul{
     right: 50px;
     background-color: #824b4a;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 50%;
     display: none;
     z-index: 1000;
