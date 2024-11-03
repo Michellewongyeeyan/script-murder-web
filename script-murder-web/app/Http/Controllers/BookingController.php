@@ -10,19 +10,10 @@ class BookingController extends Controller
 {
     public function index(Request $request)
     {
-<<<<<<< Updated upstream
-        // Fetch all script items from the database
-        $scriptItems = DB::connection('mariadb')->table('script_item')
-            ->select('id', 'scriptname', 'location', 'event_date', 'price', 'picture', 'description') // Select specific columns
-            ->orderBy('event_date', 'asc') // Sort by event date in ascending order
-            ->limit(10) // Limit results to 10
-            ->get();
-=======
         // Start building the query for script items
         $query = DB::connection('mariadb')->table('script_item')
             ->select('id', 'scriptname', 'location', 'event_date', 'price', 'picture', 'description', 'tag', 'length', 'person') // Select specific columns
             ->orderBy('event_date', 'asc'); // Sort by event date in ascending order
->>>>>>> Stashed changes
 
         // Apply filters based on the request input
         if ($request->filled('length')) {
