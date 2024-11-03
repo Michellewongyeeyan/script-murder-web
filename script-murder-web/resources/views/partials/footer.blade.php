@@ -22,6 +22,6 @@
                 </p>
             </div>
         </div>
-    </div>    
+    </div>   
     <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 </footer>

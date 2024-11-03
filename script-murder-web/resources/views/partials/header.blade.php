@@ -19,6 +19,9 @@
                     </li>    
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login/Sign Up</a>
                     </li>            
                 </ul>
             </div>
