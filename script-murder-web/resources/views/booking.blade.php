@@ -2,13 +2,10 @@
 
 @section('title', 'Booking Session')
 
-<<<<<<< Updated upstream
-=======
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/booking.css') }}">
 @endsection
 
->>>>>>> Stashed changes
 @section('content')
 <section id="booking">
     <div class="container">
@@ -87,20 +84,6 @@
                 <!-- Display each script item dynamically -->
                 <div class="row">
                     @foreach($scriptItems as $scriptItem)
-<<<<<<< Updated upstream
-                    <div class="col-md-4">
-                        <div class="outer">
-                            <a href="#">
-                                <img src="{{ asset('pictures/' . $scriptItem->picture) }}" alt="{{ $scriptItem->scriptname }}">
-                                <div class="details">
-                                    <h3>{{ $scriptItem->scriptname }}</h3>
-                                    <p class="fas fa-map-marker-alt">Location: {{ $scriptItem->location }}</p>
-                                    <p class="far fa-clock"> Date: {{ \Carbon\Carbon::parse($scriptItem->event_date)->format('M d, Y') }}</p>
-                                    <p>Price: £{{ number_format($scriptItem->price, 2) }}</p>
-                                    <p>Description: {{ $scriptItem->description }}</p>
-                                </div>
-                            </a>
-=======
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="{{ asset('pictures/' . $scriptItem->picture) }}" class="card-img-top" alt="{{ $scriptItem->scriptname }}">
@@ -116,7 +99,6 @@
                                 <p class="card-text"> {{ Str::limit($scriptItem->description, 170) }}</p>
                                 <a href="#" class="btn btn-primary">Book Now</a>
                             </div>
->>>>>>> Stashed changes
                         </div>
                     </div>
                     @endforeach
@@ -126,12 +108,8 @@
         </div>
     </div>
 </section>
-<<<<<<< Updated upstream
-@endsection
-=======
 @endsection
 
 @section('scripts')
     <script src="{{ asset('js/booking.js') }}"></script>
 @endsection
->>>>>>> Stashed changes
